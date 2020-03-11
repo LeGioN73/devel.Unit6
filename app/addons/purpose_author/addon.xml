@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>purpose_author</id>
+    <version>1.0</version>
+    <priority>100</priority>
+    <position>0</position>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <default_language>en</default_language>
+	<queries>
+
+        <item for="install">
+		ALTER TABLE `?:products`
+			ADD `author` VARCHAR(32) NOT NULL DEFAULT '';
+		</item>
+
+        <item for="uninstall">
+            ALTER TABLE `?:products`
+                DROP `author`;
+        </item>
+		
+    </queries>
+</addon>
