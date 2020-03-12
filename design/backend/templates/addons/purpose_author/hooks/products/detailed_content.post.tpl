@@ -3,7 +3,7 @@
     <div class="control-group">
         <label class="control-label" for="elm_art_by">{__("art_by")}</label>
         <div class="controls">
-        	<input type="text" id="elm_art_by" name="product_data[author]" value="{$product_data.author|default:""}" class="input-large" size="10" />
+        	<input type="text" id="elm_art_by" name="product_data[art_by]" value="{$product_data.art_by|default:""}" class="input-large" size="10" />
         </div>
     </div>
    <div class="control-group">
