@@ -9,7 +9,8 @@
    <div class="control-group">
     	<label class="control-label" for="elm_release_date">{__("release_date")}:</label>
    		<div class="controls">
-    		{include file="common/calendar.tpl" date_id="elm_release_date" date_name="product_data[release_date]" date_val=$product_data.release_date|default:""}
+    		{include file="common/calendar.tpl" date_id="release_date" date_name="product_data[release_date]" 
+            date_val=$product_data.release_date|default:""}
     	</div>
     </div>
     <div class="control-group cm-no-hide-input">
