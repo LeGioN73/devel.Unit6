@@ -6,18 +6,20 @@
     <position>0</position>
     <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
     <default_language>en</default_language>
-    <queries>
+	<queries>
         <item for="install">
-	      	ALTER TABLE `?:products`
-            ADD `art_by` VARCHAR(64),
-            ADD `release_date` int(11),
+		ALTER TABLE `?:products`
+			ADD `art_by` VARCHAR(64)
+		ALTER TABLE `?:product_descriptions`
+		    ADD `release_date` int(11),
             ADD `written_by` mediumtext
-        </item>
+		</item>
         <item for="uninstall">
-            ALTER TABLE `?:products`
-            DROP `art_by`,
-            DROP `release_date`,
-            DROP `written_by`
+		ALTER TABLE `?:products`
+			DROP `art_by`
+		ALTER TABLE `?:product_descriptions`
+			DROP `release_date` int(11),
+			DROP `written_by` mediumtext
         </item>
     </queries>
 </addon>
