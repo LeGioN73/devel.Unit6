@@ -1,0 +1,1 @@
+A module that allows you to add an author for comics
