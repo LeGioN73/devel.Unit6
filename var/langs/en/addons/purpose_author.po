@@ -1,0 +1,21 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::purpose_author"
+msgid "purpose author"
+msgstr "purpose author"
+
+msgctxt "Languages::purpose_author.art_by"
+msgid "purpose author"
+msgstr "purpose author"
+
+msgctxt "Languages::purpose_author.art_by"
+msgid "art by"
+msgstr "Art by"
+
+msgctxt "Languages::purpose_author.written_by"
+msgid "written by"
+msgstr "Written by"
