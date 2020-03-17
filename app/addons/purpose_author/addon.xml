@@ -2,21 +2,28 @@
 <addon scheme="3.0">
     <id>purpose_author</id>
     <version>1.0</version>
-    <priority>100</priority>
+    <priority>1000</priority>
     <position>0</position>
     <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
     <default_language>en</default_language>
 	<queries>
-
         <item for="install">
 		ALTER TABLE `?:products`
-			ADD `author` VARCHAR(32) NOT NULL DEFAULT '';
+			ADD `release_date` int(11)
 		</item>
-
+		<item for="install">
+		ALTER TABLE `?:product_descriptions`
+		    ADD `art_by` VARCHAR(64),
+            ADD `written_by` mediumtext
+		</item>
         <item for="uninstall">
-            ALTER TABLE `?:products`
-                DROP `author`;
+		ALTER TABLE `?:products`
+			DROP `release_date`,
+		</item>
+		<item for="uninstall">
+		ALTER TABLE `?:product_descriptions`
+			DROP `art_by`,
+			DROP `written_by`
         </item>
-		
     </queries>
 </addon>
